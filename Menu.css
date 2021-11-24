@@ -361,3 +361,61 @@ section p a:hover{
     }
     /* Cards end */
 }
+
+/*Animation*/
+
+.main h1{
+    animation: backInLeft 2s;
+}
+.main h1:hover{
+    animation: heartBeat 2s linear infinite;
+}
+.emblem img{
+    animation: rotation 3s linear infinite;
+
+}
+.emblem img:hover{
+    cursor: pointer;
+    animation-play-state: paused;
+}
+
+.image-link img:hover{
+    animation: transformation 1s;
+    animation-fill-mode: forwards;
+}
+.btn:hover{
+    animation: border 1s forwards;
+}
+.point .image{
+    animation: swing 3s linear infinite;
+}
+.point .image:hover{
+    animation: pulse paused;
+}
+.point h4:hover{
+    animation: headShake 1s;
+}
+.card:hover{
+    animation: jello 2s;
+}
+
+@keyframes transformation {
+    100%{
+        transform: rotate(360deg) scale(1.5);
+    }
+}
+@keyframes border {
+    from{
+        border-radius: 0;
+    }
+    to{
+        border-radius: 20px;
+    }
+}
+@keyframes rotation {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
